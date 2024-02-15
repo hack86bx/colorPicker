@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <h1>Color picker</h1>
+        <fieldset>
+            <h2>choisir couleur de fond</h2>
+            <label for="backgroundColorPicker"></label>
+            <input type="color" onchange="changerCouleur()" id="backgroundColorPicker" value="#e66465" />
+        </fieldset>
+
+        <fieldset>
+            <h2>choisir couleur de texte</h2>
+            <label for="textColorPicker"></label>
+            <input type="color" onchange="changerCouleur()" id="textColorPicker" value="#f6b73c" />
+        </fieldset>
+    </fieldset>
+    <fieldset id="field">
+    <label for="userComment">Commentaire:</label>
+    <textarea name="" id="userComment" cols="33" rows="5"></textarea>
+    <span id="userCommentCounter">0</span></fieldset>
+
+    <script type="text/javascript" src="colorpicker.js"></script>
+</body>
+</html>
